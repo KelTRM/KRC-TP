@@ -2,6 +2,7 @@
 
 #include<string>
 #include"SyntaxError.h"
+#include<string.h>
 
 enum class LineType {
 	TYPE_NULL,

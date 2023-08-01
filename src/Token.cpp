@@ -132,6 +132,7 @@ std::string LineContents::GetCompiledContents() {
 			return ss.str();
 		} break;
 	}
+	return "";
 }
 
 // bool DeclParse(std::string &Source) {

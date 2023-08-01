@@ -5,12 +5,18 @@
 #include<sstream>
 #include"Token.h"
 #include"Error.h"
+#include"CommandLineParser.h"
 
 std::vector<std::string> Split(std::string &String, char ch, char escape = '\0');
 std::string ReadSource(std::string SourceFileName);
 std::string PreprocessSource(std::string &str);
 
-int main() {
+int main(int argc, char **argv) {
+	CommandLineInfo_t CommandLine = ParseCommandLine(argc, argv);
+	if (CommandLine.InputFiles.size() == 0) {
+		std::cout << "Error: No input files given!\n";
+	}
+
 	std::string Source = ReadSource("Example.rlc");
 	std::string PreProcessedSource = PreprocessSource(Source);
 

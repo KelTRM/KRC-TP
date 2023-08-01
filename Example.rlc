@@ -1,0 +1,6 @@
+// C-style comments
+// this is a comment to test the comment count
+
+var Item1=25;	// Lines end with semicolon
+var Item2 = "Hello, World";	// extra comment
+// var TestItem="This is a test!\n";

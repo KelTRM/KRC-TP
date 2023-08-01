@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 		std::cout << "Error: No input files given!\n";
 	}
 
-	std::string Source = ReadSource("Example.rlc");
+	std::string Source = ReadSource(CommandLine.InputFiles[0]);
 	std::string PreProcessedSource = PreprocessSource(Source);
 
 	std::stringstream ss;
@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
 		ss << Line->GetCompiledContents();
 	}
 
-	std::ofstream Outfile("out.h");
+	std::ofstream Outfile(CommandLine.OutputFile);
 	Outfile << ss.str();
 	Outfile.close();
 }

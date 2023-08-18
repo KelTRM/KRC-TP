@@ -6,8 +6,8 @@ This is a compiler for a custom language made for resources which compiles down 
 
 # Usage
 
-There is usage documentation [here](docs/usage/README.md)
+The documentation is located [here](docs/Usage/README.md)
 
 # Contribution
 
-There is documentation for contributing to the project [here](docs/development/README.md)
+There is documentation for contributing to the project [here](docs/Contribution/README.md)

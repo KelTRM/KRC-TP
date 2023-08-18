@@ -19,8 +19,13 @@ ${BIN}: ${OBJ}
 
 all: ${BIN}
 
+ifdef (DEBUG)
 %.o: %.cpp
 	${CC} -g3 ${CF} -I ${INC} $< -c -o $@
+else
+%.o: %.cpp
+	${CC} ${CF} -I ${INC} $< -c -o $@
+endif
 
 ifneq ($(shell uname), Linux)
 run: ${BIN}

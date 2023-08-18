@@ -1,0 +1,2 @@
+// A file declaration
+FILE f1 = file.txt		// "file.txt" is the filename, which is to be loaded by the compiler [CURRENTLY UNIMPLEMENTED AS FOR AUGUST 18 2023]

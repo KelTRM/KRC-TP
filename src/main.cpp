@@ -22,8 +22,7 @@ int main(int argc, char **argv) {
 	// std::string PreProcessedSource = PreprocessSource(Source);
 
 	std::stringstream ss;
-	ss << "// This file was compiled by the KRCTP.\n"
-	      "// (Kelvin's ResourCe TransPiler)\n";
+	ss << "// This file was compiled by the KRC-TP.\n";
 
 	for (auto &File : CommandLine.InputFiles) {
 		bool Success = TranspileFile(CommandLine.InputFiles[0], ss);

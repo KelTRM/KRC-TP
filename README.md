@@ -4,7 +4,10 @@
 
 This is a compiler for a custom language made for resources which compiles down to C header files
 
-# How to use?
+# Usage
 
-You may read documentation on the command line [here](docs/commandline.md)
-The language documentation is also right [here](docs/lang.md)
+There is usage documentation [here](docs/usage/README.md)
+
+# Contribution
+
+There is documentation for contributing to the project [here](docs/development/README.md)

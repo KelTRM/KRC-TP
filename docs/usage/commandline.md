@@ -27,4 +27,4 @@ Example: `krc-tp input_file.rlc -o output_file.h`
 
 # Flags
 
-* `-o`: Specifies an output file ([Info here](#output-files))
+* `-o`: Specifies an output file ([Info here](#output-files)).

@@ -13,11 +13,11 @@
 
 RLCLang was made as a language to act as a Resource file for Windows.
 
-The reason why it was made is for use on any platform as it just compiles to a C header file
+The reason why it was made is for use on any platform as it just compiles to a C header file.
 
 # Language features
 
-Currently, the language does not support much, but here's what it does support
+Currently, the language does not support much, but here's what it does support:
 
 * [Comments](#comments)
 * [Declarations](#declarations)
@@ -48,9 +48,9 @@ The "var" keyword is used like the following
 var foo = 42;
 ```
 
-Breaking this down, a declaration is being made for "foo" and is getting the value of 42
+Breaking this down, a declaration is being made for "foo" and is getting the value of 42.
 
-Remember that semicolons are required, but the compiler currently can't handle multi-line statements, so you can't have anything like this.
+Remember that semicolons are required, but the compiler currently can't handle multi-line statements, so you can't have anything like this:
 
 ```rlc
 var
@@ -59,7 +59,7 @@ foo = 42;
 
 # How to use
 
-Now for an example, lets say you have this source code
+Now for an example, lets say you have this source code:
 
 ```rlc
 var foo = 42;
@@ -68,7 +68,7 @@ var bar = 21;
 
 Now how could we use `foo`, `bar`, or `baz` in some code?
 
-Let's say we have this.
+Let's say we have this:
 
 ```c
 #include<stdio.h>
@@ -82,7 +82,7 @@ int main() {
 
 But this code is not correct because it's just hardcoding the value.
 
-Lets take a look at what the compiler gives
+Lets take a look at what the compiler gives.
 
 ```c
 // This file was compiled by the KRC-TP.
@@ -96,9 +96,10 @@ Lets take a look at what the compiler gives
 
 As you can see, what it does is put the variables into C macros.
 
-From this information, all you need to do it use the macros generated
+From this information, all you need to do it use the macros generated.
 
 Now lets say the compiled output was in "example.h"
+Then all that would be needed is this:
 
 ```c
 #include<stdio.h>
@@ -110,3 +111,5 @@ int main() {
 	return 0;
 }
 ```
+
+And this should print a value of 63.

@@ -1,7 +1,10 @@
 # Table of contents
 
 * [RLCLang](#rlclang)
+	* [What and why?](#what-and-why)
 * [Language features](#language-features)
+	* [Comments](#comments)
+	* [Declarations](#declarations)
 * [How to use](#how-to-use)
 
 # RLCLang

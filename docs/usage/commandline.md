@@ -1,8 +1,9 @@
 # Table of contents
 
 * [Command line](#command-line)
-* [Command line](#input-files)
-* [Command line](#output-files)
+	* [Input files](#input-files)
+	* [Output files](#output-files)
+* [Flags](#flags)
 
 # Command line
 
